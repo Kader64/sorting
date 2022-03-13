@@ -1,0 +1,246 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+}
+h1{
+    margin: 10px 0;
+}
+p{
+    margin: 0;
+}
+#title{
+    display: block;
+    font-size: 30px;
+}
+header{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #3bcc40;
+    box-shadow: 0px 0px 5px 0px #3bcc40;
+    z-index: 1;
+}
+#menu_icon{
+    display: none;
+    margin-top: 8px;
+    margin-left: 10px;
+    float: left;
+    cursor: pointer;
+}
+#title{
+    float: left;
+    margin: 10px 0 0 10px;
+    font-size: 32px;
+}
+#main_left{
+    float: left;
+    width: 20%;
+    height: calc(100vh - 60px);
+    overflow-y:scroll;
+}
+#main_right{
+    float: left;
+    width: 80%;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+}
+#main_right article{
+    padding: 30px 40px 0px 50px;
+    height: calc(100% - 60px);
+}
+#main_left h1{
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    color: gray;
+    margin: 0;
+    padding: 20px 0;
+    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.2);
+}
+#left_panel{
+    margin: 0;
+    padding: 0;
+}
+#left_panel li{
+    width: 100%;
+    height: 100px;
+    padding: 8px 0px;
+    cursor: pointer;
+    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+#left_panel li:hover .alg_name{
+    color: rgb(148, 204, 223)
+}
+.alg_name{
+    float: left;
+    color: gray;
+    font-size: 30px;
+    margin-top: 35px;
+    margin-left: 20px;
+}
+.alg_logo{
+    float: left;
+    height: 100%;
+    margin-left: 2%;
+}
+.alg_logo img{
+    width: 100%;
+    height: 100%;
+}
+#alg_title{
+    padding: 5px 10px;
+    width: 500px;
+    background: linear-gradient(90deg, #3bcc40 24%, rgba(0,212,255,0) 80%);
+}
+#sort_left{
+    float: left;
+    width: 40%;
+    height: 720px;
+}
+#sort_right{
+    float: left;
+    width: 60%;
+    height: calc(100% - 35px);
+}
+#sort_left form div{
+    margin-left: 40px;
+}
+#sort_left form{
+    margin-top: 20px;
+    width: 450px;
+    border:#3bcc40 3px solid;
+    border-radius: 5px;
+}
+#s_title{
+    text-align: center;
+    margin: 8px 0;
+    border-bottom:#3bcc40 3px solid;
+}
+#p_button{
+    text-align: center;
+    margin: 8px;
+}
+#range_block div{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+#submit{
+    text-transform: uppercase;
+    color:white;
+    font-weight: bold;
+    background-color: #3bcc40;
+    border: rgb(4, 73, 2) 2px solid;
+    border-radius: 5px;
+    font-size: 18px;
+    height: 50px;
+    width: 150px;
+}
+#submit:hover{
+    color:yellow;
+}
+label{
+    font-size: 20px;
+    color: black;
+}
+input[type=number],#results{
+    font-size: 20px;
+    width: 300px;
+}
+#results{
+    border-radius: 5px;
+    border: 3px solid #1d641f;
+}
+#block2 textarea{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 60px;
+    min-width: 300px;
+    max-width: 300px;
+}
+#results{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 200px;
+    width: 440px;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    resize: none;
+    overflow-x: auto;
+}
+canvas{
+    margin-top: 70px;
+    box-shadow: 0px 0px 5px 0px black;
+}
+#range_block{
+    margin-top: 20px;
+}
+.err{
+    color: red;
+    font-size: 18px;
+}
+input[type=range]{
+    width: 100%;
+}
+#run_anim{
+    margin-right: 8px;
+}
+.show{
+    display: block !important;
+}
+#canv_block{
+    overflow-x: auto;
+}
+#sort_left #block{
+    width: 450px;
+    height: auto;
+}
+@media screen and (max-width:1625px)
+{
+    .alg_logo{
+        display: none;
+    }
+}
+@media screen and (max-width:1060px)
+{
+    #menu_icon{
+        display: block;
+    }
+    #title{
+        margin-left: 30%;
+    }
+    #main_left{
+        display: none;
+        position: absolute;
+        width: 380px;
+        background-color: #fff;
+    }
+    #main_right{
+        width: 100%;
+    }
+    .alg_logo{
+        display: block;
+    }
+    #sort_left #block{
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:1550px)
+{
+    #sort_right{
+        width: 100%;
+        clear: both;
+        margin-top: 50px;
+    }
+    #sort_left{
+        width: 100%;
+    }
+}

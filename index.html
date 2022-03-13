@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sorting Madness</title>
+</head>
+<body>
+    <header>
+        <div id="menu_icon"><img src="resources/menu.png"></div>
+        <div id="title">Sorting Madness</div>
+    </header>
+    <section id="main_left">
+        <h1>Algorithms:</h1>
+        <ul id="left_panel">
+            <li>
+                <div class="alg_logo"><img src="resources/bubble_logo.png"></div>
+                <div class="alg_name">Bubble Sort</div>
+            </li>
+            <li>
+                <div class="alg_logo"><img src="resources/quick_logo(1).png"></div>
+                <div class="alg_name">QuickSort</div>
+            </li>
+            <li>
+                <div class="alg_logo"><img src="resources/selection_logo(1).png"></div>
+                <div class="alg_name">Selection Sort</div>
+            </li>
+            <li>
+                <div class="alg_logo"><img src="resources/merge_logo.png"></div>
+                <div class="alg_name">Merge Sort</div>
+            </li>
+            <li>
+                <div class="alg_logo"><img src="resources/bogo_logo.png"></div>
+                <div class="alg_name">BogoSort</div>
+            </li>
+        </ul>
+    </section>
+    <section id="main_right">
+        <article>
+            <div id="sort_left">
+                <div id="block">
+                    <h1 id="alg_title">Bubble Sort</h1>
+                    <form id="form">
+                        <p id="s_title">Sort Array</p>
+                        <input type="radio"id="radio1" checked>
+                        <label for="radio1">Random Array</label><br>
+                        <div id="block1">
+                            <label>Array length:</label><br>
+                            <input type="number" placeholder="e.g. 100"  id="length"><br>
+                            <span class="err" id="err_length"></span>
+                            <label>Range of drawing Numbers</label><br>
+                            <input type="number" placeholder="e.g. 50" id="range"><br>
+                            <span class="err" id="err_range"></span>
+                            <input type="checkbox" id="sorted">
+                            <label for="sorted">Sorted</label><br>
+                            <input type="checkbox" id="reverse_sorted">
+                            <label for="reverse_sorted">Reverse Sorted</label>
+                        </div>
+                        <input type="radio" id="radio2">
+                        <label for="radio2">Custom Array</label><br>
+                        <div id="block2">
+                            <textarea placeholder="e.g. 1,2,3,4,5" id="custom" disabled></textarea><br>
+                            <span class="err" id="err_custom"></span>
+                            <input type="checkbox" id="run_anim"><label for="run_anim">Run Animation</label>
+                        </div>
+                        <p id="p_button"><button id="submit">Run</button></p>
+                    </form>
+                    <div id="results"></div>
+                </div>
+            </div>
+            <div id="sort_right">
+                <div id="canv_block">
+                    <canvas>Canvas</canvas>
+                </div>
+                <div id="range_block">
+                    <div>
+                        <label>Animation Delay</label>
+                        <input type="range" id="range_input">
+                    </div>
+                </div> 
+            </div>
+        </article>
+    </section>
+    <script src="sort.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
